@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cairo } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Nav from "@/components/Nav";
 import "./globals.css";
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="py-6 text-center text-sm text-emerald-100/70">
           صدقة جارية، لا تنسونا من صالح دعائكم
         </footer>
+        <Analytics />
       </body>
     </html>
   );
